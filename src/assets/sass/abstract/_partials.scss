@@ -1,0 +1,8 @@
+@use "colors" as *;
+@use "fonts" as *;
+
+
+@mixin author-text{
+    margin-block: 0;
+    line-height: 1;
+}

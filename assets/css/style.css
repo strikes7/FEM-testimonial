@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  min-height: 100dvh;
+  margin: 4.5rem 1.375rem;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.testimonial {
+  margin-inline: auto;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.author {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 4px;
+}
+.author__avatar {
+  grid-row: span 2;
+  margin-inline-end: 0.875rem;
+  border-radius: 100%;
+  border: 2px solid var(--border-color, transparent);
+  width: 2.25rem;
+  aspect-ratio: 1/1;
+  vertical-align: middle;
+}
+.author__name {
+  margin-block: 0;
+  line-height: 1;
+  grid-column: 2;
+  align-self: end;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.author__status {
+  margin-block: 0;
+  line-height: 1;
+  grid-column: 2;
+  align-self: start;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.comment {
+  border-radius: 0.5rem;
+  padding: 1.875rem 1.875rem;
+  box-shadow: 7.5rem 7.5rem 7rem -6rem hsla(217, 19%, 35%, 0.2);
+}
+.comment:nth-child(1) {
+  --border-color: hsla(0, 0%, 100%, .4);
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: auto 7.8rem;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+.comment:nth-child(2) {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+.comment:nth-child(3), .comment:nth-child(5) {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.comment:nth-child(4) {
+  --border-color: hsl(263, 55%, 52%);
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+.comment__excerpt {
+  margin-block: 1rem;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+.comment__text {
+  margin-inline-end: 2rem;
+  margin-block-end: 0.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  opacity: 0.7;
+}

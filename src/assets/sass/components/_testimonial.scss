@@ -1,0 +1,7 @@
+@use "../abstract/" as *;
+
+.testimonial{
+    margin-inline: auto;
+    display: grid;
+    gap: 1.25rem;
+}

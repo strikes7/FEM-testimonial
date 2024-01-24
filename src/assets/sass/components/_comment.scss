@@ -1,0 +1,47 @@
+@use "../abstract/" as *;
+
+.comment{
+    border-radius: .5rem;
+    padding: toRem(30) toRem(30);
+    box-shadow: 7.5rem 7.5rem 7rem -6rem $clr-blue-200-semi;
+    &:nth-child(1){
+        --border-color: hsla(0, 0%, 100%, .4);
+        background-image: url("../images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-size: auto 7.8rem;
+        background-color: $clr-violet-100;
+        color: $clr-neutral-100;
+    }
+
+    &:nth-child(2){
+        background-color: $clr-blue-200;
+        color: $clr-neutral-100;
+    }
+    
+    &:nth-child(3),&:nth-child(5){
+        background-color: $clr-neutral-100;
+        color: $clr-blue-200;
+    }
+
+    &:nth-child(4){
+        --border-color: hsl(263, 55%, 52%);
+        background-color: $clr-blue-300;
+        color: $clr-neutral-100;
+    }
+
+    &__excerpt {
+        margin-block: 1rem;
+        font-weight: 500;
+        font-size: $fs-600;
+    }
+
+    &__text{
+        margin-inline-end: 2rem;
+        margin-block-end: .5rem;
+        font-weight: 500;
+        font-size: $fs-500;
+        line-height: 1.4;
+        opacity: .7;
+    }
+}
